@@ -47,7 +47,7 @@ namespace SportsStore.Infrastructure
                 if (PageClassesEnabled) 
                 {
                     tag.AddCssClass(PageClass);
-                    tag.AddCssClass(i == PageModel.CurrentPage?
+                    tag.AddCssClass(i == PageModel.CurrentPage ?
                          PageClassSelected : PageClassNormal);
                 }
                 tag.InnerHtml.Append(i.ToString());
